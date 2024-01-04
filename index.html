@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-side">
+            <div class="image-left">
+                <div class="logo-cont">
+                    <img src="./img/odin-lined.png" alt="odin logo" class="logo-name">
+                </div>
+                <p>ODIN</p>
+            </div>
+        </div>
+
+        <div class="right-cont">
+            <div class="right-side">
+                <div class="right-header">
+                    <p>
+                        This is not a real online service! You know you need something
+                        <br>
+                        like this in your life to help you realize your deepest dreams.
+                        <br>
+                        Sign up <em>now</em> to get started.
+                    </p>
+                    <p class="string">
+                     You <em>know</em> you want to.
+                    </p>
+                </div>
+            </div>
+
+            <div class="right-side-form">
+                <h2>
+                    Let's do this!
+                </h2>
+
+                <form action="" method="post" id="myform">
+                    <div>
+                        <label for="fname">FIRST NAME</label>
+                        <br>
+                        <input type="text" name="first-name" id="fname" required>
+                    </div>
+                    <div>
+                        <label for="lname">LAST NAME</label>
+                        <br>
+                        <input type="text" id="lname" name="last-name" required>
+                    </div>
+                    <div>
+                        <label for="mail">EMAIL</label>
+                        <br>
+                        <input type="email" id="mail" name="user-mail" required>
+                    </div>
+                    <div>
+                        <label for="telnum">PHONE NUMBER</label>
+                        <br>
+                        <input type="tel" id="telnum" name="telnum">
+                    </div>
+                    <div>
+                        <label for="pwd">PASSWORD</label>
+                        <br>
+                        <input type="password" id="pwd" name="user-pwd" class="error" required>
+                    </div>
+                    <div>
+                        <label for="check-pwd">CONFIRM PASSWORD</label>
+                        <br>
+                        <input type="password" id="check-pwd" name="confirm-pwd" placeholder="repeat your password" class="error" required>
+                    </div>
+                </form>
+            </div>
+
+            <div class="button-cont">
+                <button type="submit" form="myform">Create Account</button>
+                    <p>
+                        Already have an account? <span><a href="">Log in</a></span>
+                    </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
