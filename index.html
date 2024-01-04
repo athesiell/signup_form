@@ -42,12 +42,12 @@
                     <div>
                         <label for="fname">FIRST NAME</label>
                         <br>
-                        <input type="text" name="first-name" id="fname" required>
+                        <input type="text" name="first-name" id="fname" minlength="2" maxlength="30" required>
                     </div>
                     <div>
                         <label for="lname">LAST NAME</label>
                         <br>
-                        <input type="text" id="lname" name="last-name" required>
+                        <input type="text" id="lname" name="last-name" minlength="2" maxlength="30" required>
                     </div>
                     <div>
                         <label for="mail">EMAIL</label>
@@ -57,7 +57,7 @@
                     <div>
                         <label for="telnum">PHONE NUMBER</label>
                         <br>
-                        <input type="tel" id="telnum" name="telnum">
+                        <input type="tel" id="telnum" name="user-tel">
                     </div>
                     <div>
                         <label for="pwd">PASSWORD</label>
@@ -75,11 +75,11 @@
             <div class="button-cont">
                 <button type="submit" form="myform">Create Account</button>
                     <p>
-                        Already have an account? <span><a href="">Log in</a></span>
+                        Already have an account? <span class="login"><a href="" class="login">Log in</a></span>
                     </p>
             </div>
         </div>
-
+        <span class="foto-credit">Photo by <a href="https://unsplash.com/@haliewestphoto" class="vis">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" class="vis">Unsplash</a></span>
     </div>
 </body>
 </html>

@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px;
+    --shadow-color: #5de3f5
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left-side {
+    height: 100vh;
+    width: 45%;
+    background-image: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-cont {
+    width: 100px;
+}
+
+.logo-cont img {
+    width: 100%;
+}
+
+.image-left {
+    display: flex;
+    position: relative;
+    gap: 20px;
+    justify-content: center;
+    top: 21%;
+    padding: 20px;
+    background-color: rgb(2, 2, 2, 0.4);
+
+}
+
+.image-left p {
+    font-family: norse-bold, sans-serif;
+    font-size: 8.7rem;
+    color: #ffffff;
+}
+
+.right-cont {
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side {
+    height: 60vh;
+    padding: 100px 70px 0 70px;
+}
+
+.right-header {
+    margin-top: 60px;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.right-header .string {
+    margin-top: 50px;
+}
+
+.right-side-form {
+    margin-top: -200px;
+    background-color: #ffffff;
+    padding: 30px 70px;
+}
+
+#myform {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 45%;
+    padding-top: 30px;
+}
+
+.button-cont {
+    padding: 40px 70px 0 70px;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    padding: 15px 30px;
+    width: 230px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #596D48;
+}
+
+button:hover {
+    background-color: #88b362;
+}
+
+button:active {
+    background-color: #28361b;
+}
+
+.button-cont p {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.login {
+    color: #596D48;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login:link,
+.login:visited {
+    color: #596D48;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 250px;
+    height: 35px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    padding: 6px;
+    border: 1px solid #E5E7EB;
+}
+
+input:focus:valid {
+    box-shadow: 0 0 5px var(--shadow-color);
+    outline-color:#2ba4eb;
+}
+
+input:invalid {
+    outline-color: #f33232;
+}
+
+.foto-credit {
+    position: absolute;
+    color: #fff;
+    top: 97%;
+    left: 9%;
+}
+
+.vis:visited,
+.vis:link {
+    color: #fff;
+}
+
+.vis:link {
+    text-decoration: underline;
+}
+
